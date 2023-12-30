@@ -1,5 +1,6 @@
 body{
-    background-color:azure;
+    background-color:rgb(241, 241, 241);
+
 }
 
 /* fad in out */
@@ -13,6 +14,11 @@ body{
     position:relative;
     top: 2rem;
 
+}
+
+
+.div-name{
+  margin-left: 2rem;
 }
 .name{
     position: relative;
@@ -61,7 +67,7 @@ body{
     clip-path: circle(75%);
   }
   .menu-btn{
-    position: absolute;
+    position: fixed;
     z-index: 2;
     right: 20px;
     /* left: 20px; */
@@ -162,15 +168,170 @@ body{
       filter: hue-rotate(360deg);
     }
   }
+  .img-thumbnail {
+    width: 480px;
+    height: 480px;
+    border: 1px solid rgb(242, 242, 242);
+    object-fit: contain;
+    background-color: azure;
+    border-radius: 50%;
+    position: relative;
+    top: 9.5rem;
+  }
   
-
-
-
+  .aside {
+    position: relative;
+    top: -18rem;
+    left: 33rem;
+  }
+  
+  .hello {
+    font-size: 7rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .about {
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight:600;
+    width: 400px;
+  }
+  
+  .bm {
+    position: relative;
+    top: 0.5rem;
+    left: -2rem;
+    margin: 1rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    font-size: larger;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: background-color 0.5s;
+  }
+  
+  #resume-btn {
+    background-color: goldenrod;
+    border: 1px solid rgb(0, 0, 0);
+  }
+  
+  #project-btn {
+    background-color: orangered;
+    border: 1px solid rgb(0, 0, 0);
+  }
+  
+  #contact-btn {
+    background-color: skyblue;
+    border: 1px solid rgb(0, 0, 0);
+  }
+  
+  #resume-btn:hover,
+  #project-btn:hover,
+  #contact-btn:hover {
+    background-color: rgb(242, 242, 242);
+  }
+  
+  .main {
+    position: relative;
+    left: 16rem;
+  }
+  /* .flex-container {
+    border-top: 1px solid  gray;
+    padding-top: 2rem;
+    display: flex;
+    justify-content:space-around;
+    padding-bottom: 2rem;
+    }*/
+    .logo{
+      margin: 0.5rem !important;
+    } 
+    .flex-container {
+      border-top: 1px solid gray;
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+  
+  .phone,
+  .mail-head,
+  .social,
+  .final {
+      text-align: center;
+      margin-bottom: 1rem;
+  }
+  
+  .phone a,
+  .mail-head a,
+  .social a {
+      color: black;
+      text-decoration: none;
+  }
 /* Mobile styles (up to 767px) */
 @media screen and (max-width: 767px) {
+
+  .div-name{
+    margin-left: -0.3rem;
+  }
 
     .li{
         display: none !important;
     }
 
-}
+    .main {
+      left: 0;
+      top: -3rem;
+    }
+  
+    .aside {
+      left: 0;
+      margin-left: 1rem;
+    }
+  
+    .img-thumbnail {
+      width: 90%;
+      height: auto;
+      top: 28rem;
+      left: 1rem;
+    }
+  
+    .hello {
+      font-size: 4rem;
+    }
+  
+    .about {
+      width: 100%;
+      font-size: larger;
+    }
+  
+    .bm {
+      width: 85px;
+      height: 85px;
+      top: -1rem;
+      left: 0;
+    }
+    .flex-container {
+      margin-top: 5rem;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .phone,
+  .mail-head,
+  .social,
+  .final {
+      width: 100%;
+  }
+
+  .final {
+      margin-top: 1rem;
+  }
+
+  .copy {
+      display: block;
+      margin-bottom: 0.5rem;
+  }
+
+  }
+
