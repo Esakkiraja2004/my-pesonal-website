@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100&display=swap" rel="stylesheet">
+    <title>contact us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+
+    <div class="fade-box">
+        <nav class="navbar">
+            <div class="dev">
+                <div class="div-name">
+                    <div class="dote"></div>
+                    <h3 class="name">Esakki Raja M <sub style="font-family: 'Noto Sans Thai', sans-serif; font-size:medium;">student </sub></h3>
+                </div>
+                <div class="des">
+                    <a class="li" href="Esakki Raja - Resume.pdf.pdf">Resume</a>
+                    <a class="li" href="https://github.com/Esakkiraja2004?tab=repositories">Projects</a>
+                    <a class="li" id="lis" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main class="main">
+        <div class="left-side">
+        <div class="con">
+            <h2 style="font-weight:bold;">Contact</h2>
+            <span style="font-family:Noto Sans Thai, sans-serif; font-weight: 800;">Looking forward to hearing from you</span>
+        </div>
+        <div class="con">
+            <h3>Phone</h3>
+            <span>+91 8056591650</span>
+        </div>
+        <div class="con" >
+            <h3>E-Mail</h3>
+            <span>esakkiraja2401@gmail.com</span>
+        </div>
+
+        </div>
+        
+    <!-- form -->
+    <div class="contact-container">
+        <form id="contact-form" action="http://localhost:3000/send-email" method="post">
+            <h2 class="h">Contact Us</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button class="subbtn" type="submit">Submit</button>
+        </form>
+    </div>
+    </main>
+
+    
+    <!-- section for footer -->
+
+    <footer class="flex-container">
+        <div class="phone">
+            <h5> <a style="color: black; text-decoration: none;" href="tel:+918056591650">Phone&#9990;</a></h5>
+            <a style="text-decoration: none; color: black;" href="tel:+918056591650"> +91 8056591650 </a>
+        </div>
+        <div class="mail-head">
+            <h5><a style="color: black; text-decoration: none;" href="mailto:esakkiraja2401@gmail.com">Email &#9993;</a></h5>
+            <a style="color: black; text-decoration: none;" href="mailto:esakkiraja2401@gmail.com">esakkiraja2401@gmailcom </a>
+        </div>
+        <div class="social">
+            <h5>follow Me</h5>
+            <!-- LinkedIn Logo -->
+            <a style="text-decoration: none;" href="https://www.linkedin.com/in/esakki-raja-m-748576227/" target="_blank" rel="noopener">
+                <img class="logo" src="https://cdn.jsdelivr.net/npm/simple-icons@5.15.0/icons/linkedin.svg" alt="LinkedIn" width="32" height="32">
+            </a>
+            <!-- Instagram Logo -->
+            <a style="text-decoration: none;" href="Your Instagram Profile URL" target="_blank" rel="noopener">
+                <img class="logo" src="https://cdn.jsdelivr.net/npm/simple-icons@5.15.0/icons/instagram.svg" alt="Instagram" width="32" height="32">
+            </a>
+            <!-- GitHub Logo -->
+            <a style="text-decoration: none;" href="https://github.com/Esakkiraja2004" target="_blank" rel="noopener">
+                <img class="logo" src="https://cdn.jsdelivr.net/npm/simple-icons@5.15.0/icons/github.svg" alt="GitHub" width="32" height="32">
+            </a>
+        </div>
+        <div class="final">
+            <span class="copy">&copy;2024 Esakki Raja M</span><br>
+            <span>Student @ jeppiaar engineering college</span>
+        </div>
+    </footer>
+
+<!-- section of menu bar -->
+<div class="only">
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><i class="fas fa-bars"></i>&#9776;</label>
+    <div class="wrapper">
+        <ul>
+            <li><a href="Esakki Raja - Resume.pdf.pdf">Resume</a></li>
+            <li><a href="https://github.com/Esakkiraja2004?tab=repositories">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+
+    <script src="contact.js"></script>
+</body>
+</html>
