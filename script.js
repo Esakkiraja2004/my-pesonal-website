@@ -1,3 +1,26 @@
+const fadeInBox = document.querySelector('.fade-box');
+
+function handleIntersection(entries) {
+    const entry = entries[0];
+    if (entry.isIntersecting) {
+        fadeInBox.classList.add('visible');
+    } else {
+        fadeInBox.classList.remove('visible');
+    }
+}
+
+const options = {
+    rootMargin: '0px', // no margin
+    threshold: 0.5, // trigger when 50% of the element is visible
+};
+
+
+// Create an intersection observer with the callback and options
+const observer = new IntersectionObserver(handleIntersection, options);
+
+// Start observing the target element
+observer.observe(fadeInBox);
+
 // code for Resume button
 
 var resumebtn = document.querySelector("#resume-btn");
@@ -19,6 +42,13 @@ var project = projectbtn.addEventListener('click', ()=>{
         window.open(url, '_blank');
 });
 
+// code for contact btn
+
+const contactbtn = document.querySelector('#contact-btn');
+
+var contact = contactbtn.addEventListener('click',() => {
+    window.location.href = 'contact.html';
+});
 
 // code for Responsive
 
