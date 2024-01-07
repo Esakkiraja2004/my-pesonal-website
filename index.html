@@ -7,98 +7,101 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100&display=swap" rel="stylesheet">
 
     <!-- menu btn -->
 
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
-
     <title>My personal website</title>
+
 </head>
 <body>
 <!-- Navbar section -->
+<div class="fade-box">
     <nav class="navbar">
-
         <div class="dev">
             <div class="div-name">
-            <div class="dote"></div>
-            <h3 class="name">Esakki Raja M <sub  style="font-family: 'Noto Sans Thai', sans-serif; font-size:medium;">student </sub> </h3> 
-        </div>
+                <div class="dote"></div>
+                <h3 class="name">Esakki Raja M <sub style="font-family: 'Noto Sans Thai', sans-serif; font-size:medium;">student </sub></h3>
+            </div>
             <div class="des">
-            <a class="li" href="Esakki Raja - Resume.pdf.pdf">Resume</a>
-            <a  class="li" href="https://github.com/Esakkiraja2004?tab=repositories">Projects</a>
-            <a  class="li" id="lis" href="#contact">Contact</a>
-        </div>
+                <a class="li" href="Esakki Raja - Resume.pdf.pdf">Resume</a>
+                <a class="li" href="https://github.com/Esakkiraja2004?tab=repositories">Projects</a>
+                <a class="li" id="lis" href="contact.html">Contact</a>
+            </div>
         </div>
     </nav>
-    <main class="main">
-        <div class="div-image">
-            <img src="B&W.jpg" class="img-thumbnail" alt="...">
-        </div>
-        <aside class="aside">
-            <h1 class="hello">Hello</h1>
-            <h3>A Bit About Me</h3>
-            <p class="about">I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+</div>
+<main class=" main">
+    <div class="div-image">
+        <img src="B&W.jpg" class="img-thumbnail" alt="...">
+    </div>
+    <aside class="aside">
+        <h1 class="hello">Hello</h1>
+        <h3>A Bit About Me</h3>
+        <p class="about">I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
         <div class="btn-section">
             <button class="bm" onclick="resume" id="resume-btn">Resume</button>
             <button class="bm" onclick="project" id="project-btn">Projects</button>
-            <button class="bm"  id="contact-btn">Contact</button>
+            <button class="bm" onclick="contact" id="contact-btn">Contact</button>
         </div>
-        </aside>
-    </main>
+    </aside>
+</main>
 <!-- section of menu bar -->
-    <div class="only">
+<div class="only">
     <input type="checkbox" id="active">
     <label for="active" class="menu-btn"><i class="fas fa-bars"></i>&#9776;</label>
     <div class="wrapper">
-    <ul>
-        <li><a href="Esakki Raja - Resume.pdf.pdf">Resume</a></li>
-        <li><a href="#">Project</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+        <ul>
+            <li><a href="Esakki Raja - Resume.pdf.pdf">Resume</a></li>
+            <li><a href="https://github.com/Esakkiraja2004?tab=repositories">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </div>
 </div>
 <!-- section of footer -->
-    <footer class="flex-container">
+<footer class="flex-container">
+    <div class="phone">
+        <h5> <a style="color: black; text-decoration: none;" href="tel:+918056591650">Phone&#9990;</a></h5>
+        <a style="text-decoration: none; color: black;" href="tel:+918056591650"> +91 8056591650 </a>
+    </div>
+    <div class="mail-head">
+        <h5><a style="color: black; text-decoration: none;" href="mailto:esakkiraja2401@gmail.com">Email &#9993;</a></h5>
+        <a style="color: black; text-decoration: none;" href="mailto:esakkiraja2401@gmail.com">esakkiraja2401@gmailcom </a>
+    </div>
+    <div class="social">
+        <h5>follow Me</h5>
+        <!-- LinkedIn Logo -->
+        <a style="text-decoration: none;" href="https://www.linkedin.com/in/esakki-raja-m-748576227/" target="_blank" rel="noopener">
+            <img class="logo" src="https://cdn.jsdelivr.net/npm/simple-icons@5.15.0/icons/linkedin.svg" alt="LinkedIn" width="32" height="32">
+        </a>
+        <!-- Instagram Logo -->
+        <a style="text-decoration: none;" href="Your Instagram Profile URL" target="_blank" rel="noopener">
+            <img class="logo" src="https://cdn.jsdelivr.net/npm/simple-icons@5.15.0/icons/instagram.svg" alt="Instagram" width="32" height="32">
+        </a>
+        <!-- GitHub Logo -->
+        <a style="text-decoration: none;" href="https://github.com/Esakkiraja2004" target="_blank" rel="noopener">
+            <img class="logo" src="https://cdn.jsdelivr.net/npm/simple-icons@5.15.0/icons/github.svg" alt="GitHub" width="32" height="32">
+        </a>
+    </div>
+    <div class="final">
+        <span class="copy">&copy;2024 Esakki Raja M</span><br>
+        <span>Student @ jeppiaar engineering college</span>
+    </div>
+</footer>
 
-        <div class="phone">
-            <h5> <a style="color: black; text-decoration: none;" href="tel:+918056591650">Phone&#9990;</a></h5>
-            <a style="text-decoration: none; color: black;" href="tel:+918056591650"> +91 8056591650 </a>
-        </div>
-
-        <div class="mail-head">
-            <h5><a style="color: black; text-decoration: none;" href = "mailto:esakkiraja2401@gmail.com">Email &#9993;</a></h5>
-            <a style="color: black; text-decoration: none;" href = "mailto:esakkiraja2401@gmail.com">esakkiraja2401@gmailcom </a>
-        </div>
-
-        <div class="social">
-            <h5>follow Me</h5>
-            <!-- LinkedIn Logo -->
-            <a style="text-decoration: none;" href="https://www.linkedin.com/in/esakki-raja-m-748576227/" target="_blank" rel="noopener">
-                <img class="logo"  src="https://cdn.jsdelivr.net/npm/simple-icons@5.15.0/icons/linkedin.svg" alt="LinkedIn" width="32" height="32">
-            </a>
-            <!-- Instagram Logo -->
-            <a  style="text-decoration: none;"  href="Your Instagram Profile URL" target="_blank" rel="noopener">
-                <img class="logo"  src="https://cdn.jsdelivr.net/npm/simple-icons@5.15.0/icons/instagram.svg" alt="Instagram" width="32" height="32">
-            </a>
-            <!-- GitHub Logo -->
-            <a  style="text-decoration: none;"  href="https://github.com/Esakkiraja2004" target="_blank" rel="noopener">
-                <img class="logo"  src="https://cdn.jsdelivr.net/npm/simple-icons@5.15.0/icons/github.svg" alt="GitHub" width="32" height="32">
-            </a>
-        </div>
-
-        <div class="final">
-            <span class="copy">&copy;2024 Esakki Raja M</span><br>
-            <span>Student @ jeppiaar engineering college</span>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 </html>
