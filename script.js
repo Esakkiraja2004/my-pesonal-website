@@ -1,25 +1,32 @@
-const fadeInBox = document.querySelector('.fade-box');
 
-function handleIntersection(entries) {
-    const entry = entries[0];
-    if (entry.isIntersecting) {
-        fadeInBox.classList.add('visible');
-    } else {
-        fadeInBox.classList.remove('visible');
+window.addEventListener('DOMContentLoaded', function() {
+    // Your Intersection Observer code here
+    const fadeInBox = document.querySelector('.fade-box');
+
+    fadeInBox.classList.add('visible');
+
+    function handleIntersection(entries) {
+        const entry = entries[0];
+        if (entry.intersectionRatio >= 0.5) {
+            fadeInBox.classList.add('visible');
+        } else {
+            fadeInBox.classList.remove('visible');
+        }
     }
-}
+    
+    const options = {
+        rootMargin: '0px', // no margin
+        threshold: 0.5, // trigger when 50% of the element is visible
+    };
 
-const options = {
-    rootMargin: '0px', // no margin
-    threshold: 0.5, // trigger when 50% of the element is visible
-};
 
+    // Create an intersection observer with the callback and options
+    const observer = new IntersectionObserver(handleIntersection, options);
 
-// Create an intersection observer with the callback and options
-const observer = new IntersectionObserver(handleIntersection, options);
+    // Start observing the target element
+    observer.observe(fadeInBox);
+});
 
-// Start observing the target element
-observer.observe(fadeInBox);
 
 // code for Resume button
 
@@ -59,6 +66,7 @@ window.addEventListener('load', function() {
 
     if (isMobile) {
         body.innerHTML += existingElement.outerHTML;
+        
         
     } else {
         existingElement.remove(); // Don't forget to invoke the remove method

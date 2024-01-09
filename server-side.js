@@ -1,8 +1,7 @@
-// code for server side mail
-
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -34,9 +33,12 @@ app.post('/send-email', async (req, res) => {
     // Send the email
     const info = await transporter.sendMail(mailOptions);
 
-    // Log the result and send a response to the client
+    // Log the result
     console.log('Email sent:', info.response);
-    res.status(200).send('Email sent successfully');
+
+    // Send the HTML file as a response
+    const filePath = path.join(__dirname, 'result.html');
+    res.status(200).sendFile(filePath);
   } catch (error) {
     console.error('Error sending email:', error);
     res.status(500).send('Error sending email');
