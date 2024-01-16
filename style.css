@@ -228,6 +228,10 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     transition: background-color 0.5s;
   }
+  .btn-section{
+    display: flex;
+    flex-direction: row;
+  }
   
   #resume-btn {
     background-color: goldenrod;
