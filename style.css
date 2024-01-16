@@ -76,8 +76,8 @@ body{
     /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
     /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
    /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
-    clip-path: circle(25px at calc(0% + 45px) 45px); 
-    background: #ffebeb;
+    /* clip-path: circle(25px at calc(0% + 45px) 45px); */
+    background: #000;
     clip-path: circle(25px at calc(100% - 45px) 45px);
     transition: all 0.3s ease-in-out;
   }
@@ -227,10 +227,7 @@ body{
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     transition: background-color 0.5s;
-  }
-  .btn-section{
-    display: flex;
-  }
+  }z
   
   #resume-btn {
     background-color: goldenrod;
