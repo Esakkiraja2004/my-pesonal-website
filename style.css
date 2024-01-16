@@ -55,7 +55,7 @@ body{
     text-decoration: none !important;
     position:relative;
     top: -2.2rem;
-    left: 70rem;
+    left: 60rem;
     color: black;
     margin-right:1rem ;
     padding-right: 1rem;
@@ -257,7 +257,7 @@ body{
   
   .main {
     position: relative;
-    left: 16rem;
+    left: 12rem;
   }
   /* .flex-container {
     border-top: 1px solid  gray;
