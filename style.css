@@ -330,7 +330,7 @@ body{
   
     .bm {
       width: 175px;
-      height: 125px;
+      height: 100px;
       top: -1rem;
       left: 0;
     }
@@ -340,21 +340,21 @@ body{
       align-items: center;
   }
 
-  .phone,
-  .mail-head,
-  .social,
-  .final {
-      width: 100%;
-  }
+    .phone,
+    .mail-head,
+    .social,
+    .final {
+        width: 100%;
+    }
 
-  .final {
-      margin-top: 1rem;
-  }
+    .final {
+        margin-top: 1rem;
+    }
 
-  .copy {
-      display: block;
-      margin-bottom: 0.5rem;
-  }
+    .copy {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
 
   }
 
