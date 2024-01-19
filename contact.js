@@ -45,17 +45,6 @@ window.addEventListener('load', function() {
     }
 });
 
-var isBlack = false;
-
-function labelClick() {
-    var wrapper = document.querySelector(".wrapper");
-    console.log("Label clicked!");
-
-    // Toggle between black and white background color
-    isBlack = !isBlack;
-    wrapper.style.backgroundColor = isBlack ? "black" : "white";
-}
-
 // // code for server side mail
 
 // const express = require('express');
