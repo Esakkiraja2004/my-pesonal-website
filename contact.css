@@ -78,7 +78,8 @@ body{
     /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
    /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
     /* clip-path: circle(25px at calc(0% + 45px) 45px); */
-    background: #000;
+    background-color:rgb(241, 241, 241);
+    border: 1px solid rgb(241, 241, 241);;
     clip-path: circle(25px at calc(100% - 45px) 45px);
     transition: all 0.3s ease-in-out;
   }
