@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', function() {
 var resumebtn = document.querySelector("#resume-btn");
 
 var resume = resumebtn.addEventListener("click", () => {
-    var pdfUrl = 'Esakki Raja - Resume.pdf.pdf';
+    var pdfUrl = 'esakki-raja.pdf';
 
     // Open the PDF in a new window or tab
     window.open(pdfUrl, '_blank');
@@ -71,7 +71,7 @@ window.addEventListener('load', function() {
 var resumebtn = document.querySelector("#resume-btn");
 
 var resume = resumebtn.addEventListener("click", () => {
-    var pdfUrl = 'Esakki Raja - Resume.pdf.pdf';
+    var pdfUrl = 'esakki-raja.pdf';
 
     // Open the PDF in a new window or tab
     window.open(pdfUrl, '_blank');
